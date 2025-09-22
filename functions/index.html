@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+     function getData(){
+        const myName=document.getElementById("username").value;
+        const myBranch=document.getElementById("branch").value;
+        const mySection=document.getElementById("section").value;
+        const myCollege=document.getElementById("college").value;
+        alert("Hie "+myName + mySection + myCollege + myBranch);
+document.getElementById('disp').innerHTML=`<h2 style="color:white;background-color:pink">${myName}<br>${myBranch}<br>${mySection}<br>${myCollege}</h2>`;
+     }
+ </script>
+</head>
+<body>
+    <label>Enter name:</label><input type="text"  id="username" placeholder="enter name"><br><br>
+    <label>Enter branch:</label><input type="text"  id="branch" placeholder="enter branch"><br><br>
+    <label>Enter section:</label><input type="text"  id="section" placeholder="enter section"><br><br>
+    <label>Enter name of college:</label><input type="text"  id="college" placeholder="ABC college"><br><br>
+    <button onclick="getData()">Get data</button>
+    <br>
+    <div id="disp"></div>
+</body>
+</html>
