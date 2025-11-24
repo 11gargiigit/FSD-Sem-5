@@ -4,7 +4,7 @@ function MainLayout({cartdata}){
   return (
     <div>
 
-      <nav style={{display:'flex',justifyContent:'space-around',alignItems:'center',height:'10vh',backgroundColor:'green',color:'black'}}>
+      <nav style={{display:'flex',justifyContent:'space-around',alignItems:'center',height:'10vh',backgroundColor:'brown',color:'brown',}}>
         <Link to='/login'>login</Link>
         <Link to='/registration'>registration</Link>
       </nav>
